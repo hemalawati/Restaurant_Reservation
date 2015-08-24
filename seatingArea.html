@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <title>Restaurant Reservation</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Hema's Kitchen</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Vegan</a></li>
+                        <li><a href="#">Meat</a></li>
+                        <li><a href="#">Healthy</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <a class="btn btn-default"><i class="glyphicon glyphicon-search"></i></a>
+                    </div>
+                </form>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="panel-heading">
+    <h4>Click on table number to view details of reservations, create or edit the reservation.</h4>
+</div>
+
+<article>
+    <div class="panel-body">
+        <div class="panel-group" id="accordion" role="button" aria-multiselectable="false">
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="tablist" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Table 1
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <ul type="none">
+                            <li>Name: Steve Marker</li>
+                            <li>Party size: 4</li>
+                            <li>Confirmation: SM1</li>
+                            <li>Status: Complete</li>
+                            <li>Reserved for: 8/30/2015 5 P.M.</li>
+                            <li>Date: 8/22/2015</li>
+                        </ul>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Auto Assign
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="tablist" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Table 2
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <ul type="none">
+                            <li> Name: Martha Jade</li>
+                            <li> Party size: 7</li>
+                            <li>Confirmation: MJ2</li>
+                            <li>Status: Complete</li>
+                            <li>Reserved for: 8/20/2015 11 A.M.</li>
+                            <li> Date: 8/16/2015</li>
+                        </ul>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Auto Assign
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseThree"
+                           aria-expanded="false" aria-controls="collapseThree">
+                            Table 3
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingThree">
+                    <div class="panel-body">
+                        <h3>There is no reservation for this table.</h3>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Auto Assign
+                            </label>
+                        </div>
+                        <a type="button" class="btn btn-primary btn-sm" href="createReservation.html">Create</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseFour"
+                           aria-expanded="false" aria-controls="collapseFour">
+                            Table 4
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingFour">
+                    <div class="panel-body">
+                        <ul type="none">
+                            <li> Name: Ema Jackson</li>
+                            <li> Party size: 10</li>
+                            <li>Confirmation: EJ4</li>
+                            <li>Status: Wait</li>
+                            <li>Reserved for: 8/18/2015 2 P.M.</li>
+                            <li> Date: 8/17/2015</li>
+                        </ul>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Auto Assign
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFive">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseFive"
+                           aria-expanded="false" aria-controls="collapseFive">
+                            Table 5
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="headingFive">
+                    <div class="panel-body">
+                        <ul type="none">
+                            <li> Name: Animesh Sthapit</li>
+                            <li> Party size: 18</li>
+                            <li>Confirmation: AS5</li>
+                            <li>Status: Complete</li>
+                            <li>Reserved for: 8/30/2015 7 P.M.</li>
+                            <li> Date: 8/22/2015</li>
+                        </ul>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Auto Assign
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapseSix"
+                           aria-expanded="false" aria-controls="collapseSix">
+                            Table 6
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                    <div class="panel-body">
+                        <h3>There is no reservation for this table.</h3>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Auto Assign
+                            </label>
+                        </div>
+                        <a type="button" class="btn btn-primary btn-sm" href="createReservation.html">Create</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="btn btn-primary btn-sm" href="owner%20Menu.html">Go Back</a></div>
+    </div>
+</article>
+
+<footer id="footer">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">
+            &copy Hema Kitchen. All rights reserved.
+        </div>
+    </nav>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <title>Restaurant Reservation</title>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Hema's Kitchen</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Vegan</a></li>
+                        <li><a href="#">Meat</a></li>
+                        <li><a href="#">Healthy</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <a class="btn btn-default"><i class="glyphicon glyphicon-search"></i></a>
+                    </div>
+                </form>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<section>
+<form class="form-horizontal" id="section">
+    <div class="form-group">
+        <label for="inputName" class="col-xs-4 control-label">Name</label>
+        <input id="inputName" class="col-xs-8"/>
+    </div>
+
+    <div class="form-group">
+        <label for="inputSize" class="col-xs-4 control-label">Party size</label>
+        <input id="inputSize" class="col-xs-8" type="number"/>
+    </div>
+
+    <div class="form-group">
+        <label for="inputStatus" class="col-xs-4 control-label">Status</label>
+        <input id="inputStatus" class="col-xs-8"/>
+    </div>
+
+    <div class="form-group">
+        <label for="inputPhone" class="col-xs-4 control-label">Phone</label>
+        <input id="inputPhone" class="col-xs-8" type="number"/>
+    </div>
+
+    <div class="form-group">
+        <label for="inputReservation" class="col-xs-4 control-label">Reserve Day</label>
+        <input id="inputReservation" class="col-xs-8" type="date"/>
+    </div>
+
+    <div class="form-group">
+        <label for="inputTime" class="col-xs-4 control-label">Reserve Time</label>
+        <input id="inputTime" class="col-xs-8" type="time"/>
+    </div>
+
+    <div class="form-group">
+        <label for="inputDate" class="col-xs-4 control-label">Today's date</label>
+        <input id="inputDate" class="col-xs-8" type="date"/>
+    </div>
+
+    <div class="col-sm-offset-4 col-sm-8">
+        <button type="submit" class="btn btn-primary">Create</button>
+        <button type="submit" class="btn btn-primary">Cancel</button>
+        <a class="btn btn-primary" href="Home.html">Go Back</a>
+    </div>
+</form>
+
+</section>
+
+<footer id="footer">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">
+            &copy Hema Kitchen. All rights reserved.
+        </div>
+    </nav>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
